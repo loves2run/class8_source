@@ -26,12 +26,14 @@ html {
 
 
 body {
+  color: #2b4053;
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
+  color: #2b4053;
   text-decoration: none;
 }
 
@@ -40,9 +42,20 @@ ul {
 }
 
 li {
-  float: left;
+  display: inline-block;
 }
 
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+::placeholder {
+  color:#2b4053;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -66,14 +79,42 @@ nav section {
 }
 
 .nav-2 a {
-  position: relative;
-  left: 150%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .nav-3 {
   text-align: right;
+}
+
+.button {
+  background-color: #2b4053;
+  border-image: none;
+  color: white;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+a.button {
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.hero-input { 
+  height: 30px;
+  width: 14.0625rem;
+  background-color: #e1e9f0;
+  border-radius: 0%;
+  border: none;
+  padding-right: 0;
+}
+
+.hero-button {
+  position: relative;
+  top: -3px;
 }
 
 main {
@@ -86,7 +127,11 @@ main {
 }
 
 .hero-left {
-  padding: 0 18% 0 10%;
+  padding: 0 17% 0 10%;
+}
+
+form {
+  width: 150%;
 }
 
 figure {
@@ -118,9 +163,10 @@ figure {
 .bottom-section {
   height: 300px;
   padding-left: 10%;
-  padding-right: 40%;
+  padding-right: 50%;
   padding-top: 25px;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -129,3 +175,19 @@ header, main {
   background-color: #f5f9fc;
 }
 
+.nav-1 .logo {
+  font-size: 1.2rem;
+  font-weight:700;
+}
+
+.hero-left h4 {
+  color: #7f95a7;
+  font-size: 0.7rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.bottom-section p {
+  color: #7f95a7;
+}
