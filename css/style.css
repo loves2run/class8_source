@@ -28,7 +28,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  padding: 20px 30px;
+  padding: 0;
 }
 
 a {
@@ -48,6 +48,7 @@ li {
 /*******************************************/
 header {
   height: 55px;
+  padding: 0 30px;
 }
 
 nav section {
@@ -82,7 +83,6 @@ main {
 .hero-left, .hero-right {
   float: left;
   width: 50%;
-  padding-top: 25px;
 }
 
 .hero-left {
@@ -101,14 +101,13 @@ figure {
   clear: both;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
 }
 
 .features {
   float: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 10px 20px 10px;
   width: 22.5%;
 }
 
@@ -129,3 +128,4 @@ figure {
 header, main {
   background-color: #f5f9fc;
 }
+
