@@ -175,9 +175,13 @@ header, main {
   background-color: #f5f9fc;
 }
 
-.nav-1 .logo {
+.logo {
   font-size: 1.2rem;
   font-weight:700;
+}
+
+i.fa-solid.fa-bars {
+  display: none;
 }
 
 .hero-left h4 {
@@ -190,4 +194,81 @@ header, main {
 
 .bottom-section p {
   color: #7f95a7;
+}
+
+
+/******************************************
+/* Mobile Styles
+/*******************************************/
+
+@media (max-width: 415px) {
+  body {
+    background-color: #f5f9fc;
+  }
+  
+  header {
+    border-bottom: 2px solid #dfdee6;
+    height: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+
+  .nav-1 {
+    float: left;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  i.fa-solid.fa-bars {
+    display: inline-block;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    padding: 0 30% 0 35%;
+  }
+
+  .nav-2, .nav-3 {
+    display: none;
+  }
+
+  main {
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .hero-left, .hero-right {
+    float: none;
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  .hero-right {
+    padding-right: 0;
+  }
+
+  h2 {
+    padding-right: 20%;
+  }
+
+  .hero-input {
+    width: 66.5%;
+    display: block;
+  }
+
+  .hero-button {
+    position: static;
+    width: 100%;
+  }
+
+  a.button {
+    margin-top: 10px;
+    width: 66.5%;
+  }
+
+  .features-section, .bottom-section {
+    display: none;
+  }
+
 }
